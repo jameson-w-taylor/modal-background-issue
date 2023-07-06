@@ -1,0 +1,7 @@
+{
+  "name": "modal-background-issue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
