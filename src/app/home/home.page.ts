@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonModal, IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +9,11 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
+  @ViewChild(IonModal) modal?: IonModal;
+  
   constructor() {}
+
+  cancel() {
+    this.modal?.dismiss(null, 'cancel');
+  }
 }
